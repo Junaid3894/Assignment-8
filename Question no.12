@@ -1,0 +1,28 @@
+// STAR PATTERN
+//QUESTION 12
+#include<stdio.h>
+
+int main()
+{
+   int i,j;
+   int k;
+   int n=4;
+   for(i=1;i<=n;i++){
+      k='A'; 
+      for(j=1;j<=(n*2)-1;j++){
+
+      if(j>=i && j<=(n*2)-i){
+            printf(" %c ",k);
+            j>=n ?k--:k++;
+
+         }
+         else{
+            printf("   ");
+         }
+         
+      }
+      printf("\n");//move to next line
+      }
+
+   return 0;
+}

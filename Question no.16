@@ -1,0 +1,23 @@
+// STAR PATTERN
+//QUESTION 16
+#include<stdio.h>
+
+int main()
+{
+   int i,j;
+   int n=15;
+   for(i=1;i<=n;i++){
+      for(j=1;j<=(n*2)-1;j++){ 
+         if(j==(n+1)-i|| j==(n-1)+i || i==n){
+            printf(" * ");
+         }
+         else{
+            printf("   ");
+         }
+      }
+
+      printf("\n");//move to next line
+      }
+
+   return 0;
+}
